@@ -1,0 +1,594 @@
+/* BODY */
+
+body {
+    margin: 0;
+    font-family: 'Tahoma', sans-serif;
+}
+
+.blue {
+    color: rgb(77, 157, 200);
+}
+#services h2, #portfolio h2{
+    text-transform: uppercase;
+}
+
+/* HEADER */
+
+header {
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 18px;
+}
+
+#burger {
+    border: solid 2px rgb(65, 161, 203);
+    border-radius: 4px;
+}
+
+.fa-bars {
+    color: rgb(65, 161, 203);
+    padding: 3px 5px;
+}
+
+nav {
+    display: none;
+}
+
+nav li {
+    margin-left: -13%;
+    padding: 5px;
+    list-style: none;
+    text-align: center;
+}
+
+.active {
+    border-left: solid 2px rgb(65, 161, 203);
+}
+
+nav a,
+nav a:hover,
+nav a:visited {
+    text-decoration: none;
+    color: grey;
+}
+
+
+/* ACCUEIL */
+
+#accueil {
+    margin-top: 75px;
+    background-image: url("images/slider/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(123,123,123);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    opacity: 1;
+}
+
+#accueil_left {
+    display: none;
+    padding: 20px 15px 20px 10px;
+    border-radius: 0 40px 40px 0;
+    background-color: rgb(50, 50, 54);
+}
+
+#accueil_left i,
+#accueil_right i {
+    color: white;
+}
+
+#accueil_center {
+    text-align: center;
+    margin-top: 30%;
+    padding: 0 20px;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+h1 #blue_title {
+    color: rgb(65, 161, 203);
+}
+
+#accueil button {
+    background-color: rgb(65, 161, 203);
+    border: none;
+    border-radius: 4px;
+    padding: 7px 10px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 14px;
+}
+
+#accueil_right {
+    display: none;
+    padding: 20px 10px 20px 15px;
+    border-radius: 40px 0 0 40px;
+    background-color: rgb(50, 50, 54);
+}
+
+
+/* PROGRESS BAR */
+
+#content {
+    width: 100%;
+    height: 5px;
+    position: relative;
+    bottom: 4px;
+}
+
+.expand {
+    width: 100%;
+    height: 4px;
+    background: rgb(65, 161, 203);
+    position: absolute;
+    -moz-animation: fullexpand 10s ease-out;
+    -webkit-animation: fullexpand 10s ease-out;
+}
+
+@-moz-keyframes fullexpand {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes fullexpand {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+/* BLOCK WHITE */
+
+#block_white {
+    width: 100%;
+    height: 80px;
+    border-radius: 0 0 4px 4px;
+    margin-top: -5px;
+    background-image: linear-gradient(white, rgb(203, 203, 203));
+}
+
+
+/* SERVICES */
+
+#services {
+    background-image: linear-gradient(white, rgb(247, 247, 247));
+    padding-bottom: 30px;
+}
+
+#services_top {
+    text-align: center;
+}
+
+#services_top div,
+#portfolio_top div {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    margin: auto;
+}
+
+hr {
+    width: 50px;
+    border: solid 1px rgb(232, 233, 232);
+}
+
+#services_bottom_left img {
+    width: 100%;
+}
+
+#services_bottom_right {
+    text-align: center;
+}
+
+#services_bottom_right .fa-line-chart,
+#services_bottom_right .fa-cubes,
+#services_bottom_right .fa-pie-chart {
+    font-size: 1.3em;
+    border: solid 1px rgb(232, 233, 232);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+#services_bottom_right .fa-circle {
+    font-size: 0.8em;
+    margin: 2px;
+    position: relative;
+    right: 18px;
+    border: solid 5px rgb(250,250,250);
+}
+
+
+/* PORTFOLIO */
+#portfolio{
+    background-image: linear-gradient(rgb(242,242,242), rgb(228, 228, 228));
+    margin-top: -20px;
+}
+#portfolio_top {
+    text-align: center;
+    padding-top: 20px;
+}
+#portfolio_menu{
+    margin-bottom: 50px;
+}
+#portfolio_menu ul{
+    display: flex;
+    list-style: none;
+    border-radius: 4px;
+    background: rgb(223,223,223);
+    width: 300px;
+    padding: 10px;
+    justify-content: space-between;
+    margin: auto;
+}
+#portfolio_menu li{
+    text-align: left;
+    font-size: 0.9em;
+    padding: 14px 10px 0px 10px;
+    margin: -10px;
+}
+#portfolio_menu li:nth-child(1){
+    border-radius: 4px 0px 0px 4px;
+}
+#portfolio_menu li:nth-child(4){
+    border-radius: 0px 4px 4px 0px;
+}
+.active_choice{
+    background-color: rgb(77, 157, 200);
+    border-bottom: solid 3px rgb(50, 106,137);
+    color: white;
+}
+.active_choice span, .active_choice i{
+    display: flex;
+    justify-content: center;
+}
+.active_choice i{
+    position: relative;
+    top: 12px;
+    color: rgb(50, 106,137);
+}
+.other_choices{
+    color: rgb(89,93,97);
+}
+.other_choices i{
+    display: none;
+}
+.project{
+    width: 276px;
+    margin: auto;
+}
+.project .project_info{
+    opacity: 1;
+}
+.project:hover .project_info{
+    opacity: 1;
+}
+.project img{
+    width: 100%;
+}
+.project_info{
+    position: relative;
+    bottom: 67px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 10px 0px 10px;
+    color: white;
+    margin-bottom: -40px;
+}
+.project_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.project_info h3{
+    margin-top: -5px;
+}
+.project_info p{
+    margin-top: -15px;
+    padding-bottom: 10px;
+}
+.project_info i{
+    background-color: rgb(64,145,162);
+    padding: 10px;
+    border: solid 2px white;
+    border-radius: 50%;
+    position: relative;
+    bottom: 30px;
+}
+/* SECTION FOOTER */
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#map, #contact{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    left:0;
+}
+#map
+{
+    height: 100%;
+    z-index: 0;
+}
+#contact{
+    z-index: 1;
+    background: rgba(90,180,220,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form{
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+    width: 100%;
+}
+address{
+    font-style: normal;
+    font-size: 0.8em;
+}
+#form span{
+    border-bottom: dashed 1px black;   
+}
+input, textarea{
+    width: 90%;
+    margin: 10px 0;
+    border: solid 1px grey;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+textarea{
+    height: 100px;
+}
+button{
+    background-color: rgb(65, 161, 203);
+    border: none;
+    border-radius: 4px;
+    padding: 7px 10px;
+    color: white;
+}
+
+/* FORMAT TABLETTE */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* HEADER */
+    header {
+        margin: 0 10%;
+        display: flex;
+        justify-content: space-between;
+        position: static;
+    }
+    #burger {
+        display: none;
+    }
+    nav {
+        display: inline;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav li {
+        margin-left: 10px;
+        padding-top: 35px;
+        position: relative;
+        bottom: 24px;
+    }
+    .active {
+        border-left: none;
+        border-top: solid 2px rgb(65, 161, 203);
+        margin-top: -2px;
+    }
+    /* ACCUEIL */
+    #accueil {
+        margin-top: 10px;
+        background-size: 100%;
+    }
+    #accueil_left, #accueil_right{
+        display: inherit;
+    }
+    #accueil_center {
+        text-align: left;
+        margin: 30px 8%;
+        flex: 2;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    #accueil h2 {
+        font-size: 0.9em;
+        font-weight: normal;
+    }
+    /* SERVICES */
+    #services {
+        padding-bottom: 0;
+    }
+    #services_bottom {
+        display: flex;
+        justify-content: center;
+    }
+    #services_bottom_left {
+        margin-top: 20px;
+    }
+    #services_bottom_left,
+    #services_bottom_right {
+        width: 40%;
+    }
+    #services_bottom_right {
+        margin-top: 70px;
+    }
+    .services_bottom_right_block {
+        display: flex;
+        align-items: center;
+    }
+    .services_bottom_right_block div {
+        text-align: left;
+    }
+    #services_bottom_right .fa-circle {
+        position: relative;
+        left: 50px;
+        bottom: 43px;
+    }
+    .services_left {
+        margin-right: 10px;
+        margin-top: 30px;
+    }
+    .services_right p {
+        margin-top: -10px;
+    }
+    
+    /* PORTFOLIO */
+    #portfolio_projects{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+    }
+    .project{
+        margin: 0 20px;
+    }
+    .project .project_info{
+        opacity: 0;
+    }
+    
+    /* FOOTER */
+    #contact{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #form{
+        margin-right: 150px;
+        width: 20%;
+    }
+}
+
+/* FORMAT BUREAU */
+@media (min-width: 992px) {
+    /* HEADER */
+    header {
+        margin: 0 10%;
+        display: flex;
+        justify-content: space-between;
+        position: static;
+    }
+    #burger {
+        display: none;
+    }
+    nav {
+        display: inline;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav li {
+        margin-left: 10px;
+        padding-top: 35px;
+        position: relative;
+        bottom: 24px;
+    }
+    .active {
+        border-left: none;
+        border-top: solid 2px rgb(65, 161, 203);
+        margin-top: -2px;
+    }
+    /* ACCUEIL */
+    #accueil {
+        margin-top: 10px;
+    }
+    #accueil_left, #accueil_right{
+        display: inherit;
+    }
+    #accueil_center {
+        text-align: left;
+        margin: 120px 8%;
+        flex: 2;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    #accueil h2 {
+        font-size: 0.9em;
+        font-weight: normal;
+    }
+    /* SERVICES */
+    #services {
+        padding-bottom: 0;
+    }
+    #services_bottom {
+        display: flex;
+        justify-content: center;
+    }
+    #services_bottom_left {
+        margin-top: 20px;
+    }
+    #services_bottom_left,
+    #services_bottom_right {
+        width: 40%;
+    }
+    #services_bottom_right {
+        margin-top: 70px;
+    }
+    .services_bottom_right_block {
+        display: flex;
+        align-items: center;
+    }
+    .services_bottom_right_block div {
+        text-align: left;
+    }
+    #services_bottom_right .fa-circle {
+        position: relative;
+        left: 50px;
+        bottom: 43px;
+    }
+    .services_left {
+        margin-right: 10px;
+        margin-top: 30px;
+    }
+    .services_right p {
+        margin-top: -10px;
+    }
+    
+    /* PORTFOLIO */
+    #portfolio_projects{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+    }
+    .project{
+        margin: 0 20px;
+    }
+    .project .project_info{
+        opacity: 0;
+    }
+    
+    /* FOOTER */
+    #contact{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #form{
+        margin-right: 150px;
+        width: 20%;
+    }
+}

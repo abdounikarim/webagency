@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>WebAgency</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WebAgency, l'agence de tous vos projets">
+    <!-- Facebook Meta -->
+    <meta property="og:title" content="WebAgency"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://webagency.abdounikarim.com/"/>
+    <meta property="og:image" content="http://webagency.abdounikarim.com/images/logo.png"/>
+    <meta property="og:description" content="WebAgency, l'agence de tous vos projets"/>
+    
+    <!-- Twitter Meta -->
+    <meta name="twitter:card" content="WebAgency">
+    <meta name="twitter:description" content="WebAgency, l'agence de tous vos projets">
+    <meta name="twitter:image" content="http://webagency.abdounikarim.com/images/logo.png">
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css"> </head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/logo.png" alt="logo WebAgency"></a>
+            <div id="burger"> <i class="fa fa-bars fa-2x" aria-hidden="true"></i> </div>
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="accueil" class="bg1">
+            <div id="accueil_left" class="accueil-angle"> <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i> </div>
+            <div id="accueil_center">
+                <h1><span id="blue_title">WebAgency</span> : l'agence de tous <br>vos projets !</h1>
+                <h2>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</h2>
+                <button onclick="location.href='#services';">Plus d'infos</button>
+            </div>
+            <div id="accueil_right" class="accueil-angle"> <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i> </div>
+        </section>
+        <div id="content"> <span class="expand"></span> </div>
+        <div id="block_white"></div>
+        <section id="services">
+            <div id="services_top">
+                <h2>Nos Services</h2>
+                <div>
+                    <hr><i class="fa fa-circle blue" aria-hidden="true"></i><hr> 
+                </div>
+                <p>Voici les différentes services que nous proposons, aussi divers que variés.
+                <br>La liste étant non exhaustive, contactez-nous au besoin.</p>
+            </div>
+            <div id="services_bottom">
+                <div id="services_bottom_left"> <img src="images/main-feature.png" alt="Image Desktop"> </div>
+                <div id="services_bottom_right">
+                    <div class="services_bottom_right_block">
+                        <div class="services_left"> <i class="fa fa-line-chart blue" aria-hidden="true"></i> <i class="fa fa-circle blue" aria-hidden="true"></i> </div>
+                        <div class="services_right">
+                            <h3>UX design</h3>
+                            <p>Le UX design consiste à penser et à concevoir un site web de manière à ce que l'expérience utilisateur soit la meilleure possible.</p>
+                        </div>
+                    </div>
+                    <div class="services_bottom_right_block">
+                        <div class="services_left"> <i class="fa fa-cubes blue" aria-hidden="true"></i> <i class="fa fa-circle blue" aria-hidden="true"></i> </div>
+                        <div class="services_right">
+                            <h3>UI design</h3>
+                            <p>L'UI se définit par l'ensemble des processus qui aboutissent à une interaction homme/machine plus facile et intuitive.</p>
+                        </div>
+                    </div>
+                    <div class="services_bottom_right_block">
+                        <div class="services_left"> <i class="fa fa-pie-chart blue" aria-hidden="true"></i> <i class="fa fa-circle blue" aria-hidden="true"></i> </div>
+                        <div class="services_right">
+                            <h3>SEO</h3>
+                            <p>Le SEO est l’art de positionner un projet web dans les premiers résultats naturels des moteurs de recherche.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div id="portfolio_top">
+                <h2>Nos Projets</h2>
+                <div>
+                    <hr><i class="fa fa-circle blue" aria-hidden="true"></i><hr>
+                </div>
+                <p>Vous pouvez retrouver ici les derniers projets sur lesquels nous avons travaillé.
+                <br>Nous sommes ouvert à tout, n'hésitez pas à nous contacter.</p>
+            </div>
+            <div id="portfolio_menu">
+                <ul>
+                    <li id="pm_all_works" class="active_choice">
+                        <span>All Works</span>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </li>
+                    <li id="pm_creative" class="other_choices">
+                        <span>Creative</span>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </li>
+                    <li id="pm_corporate" class="other_choices">
+                        <span>Corporate</span>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </li>
+                    <li id="pm_portfolio" class="other_choices">
+                        <span>Portfolio</span>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </li>
+                </ul>
+            </div>
+            <div id="portfolio_projects">
+                <div class="project creative">
+                    <img src="images/portfolio/01.jpg" alt="Caricatures-moi">
+                    <div class="project_info">
+                        <div class="project_title">
+                            <h3>Caricatures-moi</h3>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                        <p>Votre caricature personnalisée</p>
+                    </div>
+                </div>
+                <div class="project portfolio">
+                    <img src="images/portfolio/02.jpg" alt="Flat Rabbit">
+                    <div class="project_info">
+                        <div class="project_title">
+                            <h3>Flat Rabbit</h3>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                        <p>Les aventures d'un étrange lapin</p>
+                    </div>
+                </div>
+                <div class="project creative">
+                    <img src="images/portfolio/03.jpg" alt="Original Pompadour">
+                    <div class="project_info">
+                        <div class="project_title">
+                            <h3>Original Pompadour</h3>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                        <p>Site officiel de la marque</p>
+                    </div>
+                </div>
+                <div class="project corporate">
+                    <img src="images/portfolio/04.jpg" alt="Brand Peace">
+                    <div class="project_info">
+                        <div class="project_title">
+                            <h3>Brand Peace</h3>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                        <p>Une entreprise pour la paix</p>
+                    </div>
+                </div>
+                <div class="project corporate">
+                    <img src="images/portfolio/05.jpg" alt="Shopping bag">
+                    <div class="project_info">
+                        <div class="project_title">
+                            <h3>Shopping bag</h3>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                        <p>Site recensant de nombreux sacs</p>
+                    </div>
+                </div>
+                <div class="project portfolio">
+                    <img src="images/portfolio/06.jpg" alt="Strange world">
+                    <div class="project_info">
+                        <div class="project_title">
+                            <h3>Strange world</h3>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                        <p>Le monde a son propre design</p>
+                    </div>
+                </div>
+                <div class="project creative">
+                    <img src="images/portfolio/07.jpg" alt="Posez les armes">
+                    <div class="project_info">
+                        <div class="project_title">
+                            <h3>Posez les armes</h3>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                        <p>Association pour la paix</p>
+                    </div>
+                </div>
+                <div class="project corporate">
+                    <img src="images/portfolio/08.jpg" alt="Be theme">
+                    <div class="project_info">
+                        <div class="project_title">
+                            <h3>Be theme</h3>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                        <p>Thème original</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="map"></div>
+        <div id="contact">
+            <div id="form">
+                <form>
+                    <h3>Contact Info</h3>
+                    <address>
+                        WebAgency SAS<br>
+                        25 rue d'Hauteville 75010 Paris<br>
+                        <span>Tel :</span> 01 02 03 04 05
+                    </address>
+                    <div>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div>
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <button>Send Message</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    //Map        
+        function initMap() {
+            var myLatLng = {lat: 48.8730781, lng: 2.3518306};
+            var myLatLngMarker = {lat: 48.873142, lng: 2.349899};
+
+            // Create a map object and specify the DOM element for display.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: myLatLng,
+                scrollwheel: false,
+                zoom: 17
+            });
+
+            // Create a marker and set its position.
+            var marker = new google.maps.Marker({
+                map: map,
+                position: myLatLngMarker,
+                title: 'WebAgency'
+            });
+        }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe1geovBbMBd01q7WTpx13U9R-9NGY34o&callback=initMap">
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
