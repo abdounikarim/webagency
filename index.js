@@ -1,7 +1,5 @@
 $( document ).ready(function() {
-
     //On masque le menu par défaut
-
     //Lors du clic sur le bouton, on affiche ou masque le menu
     $('#burger').click(function () {
         $('ul').slideToggle();
@@ -18,29 +16,6 @@ $( document ).ready(function() {
         });
         $("li.active").removeClass("active");
         $(this).parent().addClass('active');
-    });
-    
-    //Slider
-    $(".accueil-angle").click(function () {
-        $('body').off("click", ".accueil-angle");
-        var bg1 = $("#accueil").attr('class');
-        var opacity = $("#accueil").css('opacity');
-        for(var i = 0; i <= opacity; i = i + 0.50)
-        {
-            $("#accueil").fadeTo(400, i, function () {
-                if(bg1 === "bg1"){
-                    $("#accueil").css('background-image', "url(images/slider/bg2.jpg)");
-                    $("#accueil").toggleClass();
-                }
-                else{
-                    $("#accueil").css('background-image', "url(images/slider/bg1.jpg)");
-                    $("#accueil").toggleClass();
-                }
-            });
-            console.log(i);
-        }
-        console.log('fini');
-        $('body').on('click', ".accueil-angle");
     });
     
     //Menu projets
