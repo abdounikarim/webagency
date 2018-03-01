@@ -4,11 +4,11 @@ $( document ).ready(function() {
 
     //Lors du clic sur le bouton, on affiche ou masque le menu
     $('#burger').click(function () {
-        $('nav').slideToggle();
+        $('ul').slideToggle();
     });
 
     //Scrollspy fluide
-    $('nav a').on('click', function(e) {
+    $('ul a').on('click', function(e) {
         e.preventDefault();
         var hash = this.hash;
         $('html, body').animate({
@@ -22,9 +22,10 @@ $( document ).ready(function() {
     
     //Slider
     $(".accueil-angle").click(function () {
+        $('body').off("click", ".accueil-angle");
         var bg1 = $("#accueil").attr('class');
         var opacity = $("#accueil").css('opacity');
-        for(var i = 0; i <= opacity; i = i + 0.10)
+        for(var i = 0; i <= opacity; i = i + 0.50)
         {
             $("#accueil").fadeTo(400, i, function () {
                 if(bg1 === "bg1"){
@@ -36,7 +37,10 @@ $( document ).ready(function() {
                     $("#accueil").toggleClass();
                 }
             });
+            console.log(i);
         }
+        console.log('fini');
+        $('body').on('click', ".accueil-angle");
     });
     
     //Menu projets
